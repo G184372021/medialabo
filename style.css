@@ -1,0 +1,28 @@
+  html {
+    font-family:"MS Pゴシック";
+    font-size: 10px;
+  }
+  body {
+    width: 100em;
+    margin: 0 auto;
+  }
+  h1,h2,h3 {
+    font-size: 4em;
+  }
+  p {
+    font-size: 1.7em;
+  }
+  header {
+    background-color: rgb(253, 114, 0);
+    height: 10em;
+    padding: 2em;
+  }
+  h1 {
+
+    padding: 0.5em 0;
+    margin: 0px;
+  }
+  img {
+    float: right;
+    margin: 1.2em 1.5em;
+  }
