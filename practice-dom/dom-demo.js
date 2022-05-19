@@ -9,10 +9,6 @@ ul.insertAdjacentElement('beforeend', li);
 li = document.createElement('li');
 li.textContent = 'ヨーロッパ大陸';
 ul.insertAdjacentElement('beforeend', li);
-let h2s = document.querySelectorAll('h2');
-for (let h2 of h2s) {
-    h1.style.backgroundColor = 'palegreen';
-}
 // id が sevenOcean の h2 要素を検索
 // （次の行を完成させる）
 let h2sevenOcean = document.querySelector('h2#sevenOcean');
@@ -38,4 +34,8 @@ for (let o of oceans) {
   // （この中を完成させる）
     let li =document.createElement("li");
     ul.insertAdjacentElement('beforeend',li);
+}
+let h2s = document.querySelectorAll('h2');
+for (let h2 of h2s) {
+    h1.style.backgroundColor = 'palegreen';
 }
