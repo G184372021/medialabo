@@ -34,6 +34,7 @@ for (let o of oceans) {
   // （この中を完成させる）
     let li =document.createElement("li");
     ul.insertAdjacentElement('beforeend',li);
+    li.textContent = o;
 }
 let h2s = document.querySelectorAll('h2');
 for (let h2 of h2s) {
