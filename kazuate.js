@@ -9,11 +9,13 @@ let kaisu = 0;
 // 将来: ボタンを押したら， hantei() を呼び出すように修正する
 hantei();
 // ボタンを押した後の処理をする関数 hantei() の定義
+let a = document.querySelector('p#result')
 function hantei() {
     let yoso = 4;// 第5回課題:テキストボックスの数値をここに代入
     kaisu=kaisu+1
     console.log(kaisu+'回目の予想: '+yoso);
     <p><span id="kaisu"></span>回目の予想: <span id="yoso"></span> です．</p>
+    a.insertAdjacentElement('afterend', );
     if(kaisu<4){
         if(kaisu===3){
             if(kotae!==yoso){
