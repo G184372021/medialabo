@@ -5,7 +5,7 @@ let students = [
 ]
 
 // div#placeholder を検索
-let dp = document.querySelector('div#placeholder')
+let dp = document.querySelector('div#placeholder');
 
 // 写真表を1つずつ繰り返し追加
 for (let student of students) {
