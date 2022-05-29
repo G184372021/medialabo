@@ -203,3 +203,4 @@ let data = {
 for(n of data.results.shop){
   console.log(n.name);
 }
+let p=document.querySelector('p#result');
