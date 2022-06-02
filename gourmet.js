@@ -207,7 +207,7 @@ let b = document.querySelector('#print');
 b.addEventListener('click',print);
 let p=document.querySelector('p#result');
 function print() {
-  let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G006.json';
+  let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/'+p+'.json';
   axios.get(url).then(showResult).catch(showError).then(finish);
 }
 function showResult(resp) {
@@ -215,11 +215,16 @@ function showResult(resp) {
   if (typeof data === 'string') {
     data = JSON.parse(data);
   }
-  p.textContent=data;
-}
+  let e = document.querySelector('th#access');
+  for(n of data.results.shop){
+    p = document.createElement('td');
+    p.textContent = n.access;
+    e.insertAdjacentElement('afterend', p);
+}//
 function showError(err) {
   p.textContent=err;
 }
 function finish() {
-  p.textContent= '検索を終了しました。';
+  p.textContent=検索を終了しました;
+}
 }
