@@ -203,13 +203,12 @@ let data = {
 for(n of data.results.shop){
   console.log(n.name);
 }
+let b = document.querySelector('#print');
+b.addEventListener('click',print);
 let p=document.querySelector('p#result');
 function print() {
-  let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/'+{suuzi}+'.json';
-axios.get(url)
-        .then(showResult)
-        .catch(showError)
-        .then(finish);
+  let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G006.json';
+  axios.get(url).then(showResult).catch(showError).then(finish);
 }
 function showResult(resp) {
   let data = resp.data;

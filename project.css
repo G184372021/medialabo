@@ -6,10 +6,14 @@ html {
     background-color: rgb(37, 255, 91);
     height: 10em;
     padding: 0.2em;
+    margin: 0em 0em 1em 0em;
   }
   h1,h2,h3 {
     font-size: 4em;
   }
   p {
     font-size: 2em;
+  }
+  table{
+    margin: 10em 0em;
   }
