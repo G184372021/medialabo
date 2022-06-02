@@ -3,15 +3,16 @@
 <head>
 <title>kadai</title>
 <script src="gourmet.js" defer></script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="project.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
 </head>
 <body>
-  <label for="ken">番号を入力:</label>
-  <input type="text" name="suuzi" id="suuzi" size="10">
-  <button id="print">表示</button>
     <header>
         <h1>グルメ情報</h1>
-    </header> 
+    </header>
+    <label for="ken">番号を入力:</label>
+    <input type="text" name="suuzi" id="suuzi" size="10">
+    <button id="print">表示</button>
  <table border="1" width="50%">
     <tr>
       <th>番号</th>
@@ -32,6 +33,22 @@
     <tr>
       <td>G004</td>
       <td><a name="G004">和食</a></td>
+    </tr>
+    <tr>
+      <td>G005</td>
+      <td><a name="G004">洋食</a></td>
+    </tr>
+    <tr>
+      <td>G006</td>
+      <td><a name="G004">イタリアン・フレンチ</a></td>
+    </tr>
+    <tr>
+      <td>G007</td>
+      <td><a name="G004">中華</a></td>
+    </tr>
+    <tr>
+      <td>G008</td>
+      <td><a name="G004">焼肉・ホルモン</a></td>
     </tr>
   </table>
   <p id="result"></p>

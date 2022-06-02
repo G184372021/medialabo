@@ -2,6 +2,11 @@ html {
     font-family:"MS Pゴシック";
     font-size: 10px;
   }
+  header{
+    background-color: rgb(37, 255, 91);
+    height: 10em;
+    padding: 0.2em;
+  }
   h1,h2,h3 {
     font-size: 4em;
   }

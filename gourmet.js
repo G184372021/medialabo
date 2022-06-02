@@ -204,3 +204,23 @@ for(n of data.results.shop){
   console.log(n.name);
 }
 let p=document.querySelector('p#result');
+function print() {
+  let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/'+{suuzi}+'.json';
+axios.get(url)
+        .then(showResult)
+        .catch(showError)
+        .then(finish);
+}
+function showResult(resp) {
+  let data = resp.data;
+  if (typeof data === 'string') {
+    data = JSON.parse(data);
+  }
+  p.textContent=data;
+}
+function showError(err) {
+  p.textContent=err;
+}
+function finish() {
+  p.textContent= 'Ajax 通信が終わりました';
+}
