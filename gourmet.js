@@ -221,5 +221,5 @@ function showError(err) {
   p.textContent=err;
 }
 function finish() {
-  p.textContent= 'Ajax 通信が終わりました';
+  p.textContent= '検索を終了しました。';
 }
