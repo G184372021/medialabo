@@ -207,8 +207,12 @@ let b = document.querySelector('#print');
 b.addEventListener('click',print);
 let p=document.querySelector('p#result');
 function print() {
-  let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/'+p+'.json';
-  axios.get(url).then(showResult).catch(showError).then(finish);
+  let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G006.json';
+  axios.get(url).then(a).then(showResult).catch(showError).then(finish);
+}
+function a(){
+  let y = document.querySelector('td#accessf');
+  y.detach()
 }
 function showResult(resp) {
   let data = resp.data;
@@ -220,11 +224,13 @@ function showResult(resp) {
     p = document.createElement('td');
     p.textContent = n.access;
     e.insertAdjacentElement('afterend', p);
-}//
+    p.id = 'accessf'
+  }
+}
 function showError(err) {
   p.textContent=err;
 }
 function finish() {
-  p.textContent=検索を終了しました;
+  console.log("検索を終了しました");
 }
-}
+
