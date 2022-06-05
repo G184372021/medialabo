@@ -207,12 +207,10 @@ let b = document.querySelector('#print');
 b.addEventListener('click',print);
 let p=document.querySelector('p#result');
 function print() {
-  let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G006.json';
-  axios.get(url).then(a).then(showResult).catch(showError).then(finish);
-}
-function a(){
-  let y = document.querySelector('td#accessf');
-  y.detach()
+  let i = document.querySelector('input[name="suuzi"]');
+  let suuzi = i.value; 
+  let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/'+suuzi+'.json';
+  axios.get(url).then(showResult).catch(showError).then(finish);
 }
 function showResult(resp) {
   let data = resp.data;
